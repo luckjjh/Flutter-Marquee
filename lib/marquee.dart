@@ -738,8 +738,7 @@ class _MarqueeState extends State<Marquee> with SingleTickerProviderStateMixin {
             : Align(alignment: alignment, child: text);
       },
     );
-
-    return kIsWeb ? marquee : _wrapWithFadingEdgeScrollView(marquee);
+    return marquee;
   }
 
   /// Builds the blank space between children.
