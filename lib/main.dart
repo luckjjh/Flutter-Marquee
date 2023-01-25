@@ -96,10 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: const <Widget>[
-            FlutterMarquee(children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', style: TextStyle(fontSize: 20), marqueeOn: 'hover'),
+            // FlutterMarquee(children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', style: TextStyle(fontSize: 20), marqueeOn: 'hover'),
             FlutterMarquee(children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', style: TextStyle(fontSize: 20), marqueeOn: 'render'),
-            FlutterMarquee(children: 'لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادةالبشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء', style: TextStyle(fontSize: 20,fontFamily: 'DGTebianBlack'), marqueeOn: 'hover',forceDirection: 'rtl',alignment: 'right'),
-            FlutterMarquee(children: 'البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاءلكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة', style: TextStyle(fontSize: 20,fontFamily: 'DGTebianBlack'), marqueeOn: 'render',forceDirection: 'rtl', alignment: 'right'),
+            // FlutterMarquee(children: 'لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادةالبشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء', style: TextStyle(fontSize: 20,fontFamily: 'DGTebianBlack'), marqueeOn: 'hover',forceDirection: 'rtl',alignment: 'right'),
+            // FlutterMarquee(children: 'البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاءلكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة', style: TextStyle(fontSize: 20,fontFamily: 'DGTebianBlack'), marqueeOn: 'render',forceDirection: 'rtl', alignment: 'right'),
           ],
         ),
       ),

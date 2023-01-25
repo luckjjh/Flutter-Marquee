@@ -748,13 +748,4 @@ class _MarqueeState extends State<Marquee> with SingleTickerProviderStateMixin {
       height: widget.scrollAxis == Axis.vertical ? widget.blankSpace : null,
     );
   }
-
-  Widget _wrapWithFadingEdgeScrollView(Widget child) {
-    return FadingEdgeScrollView.fromScrollView(
-      gradientFractionOnStart:
-          !showFading ? 0.0 : widget.fadingEdgeStartFraction,
-      gradientFractionOnEnd: !showFading ? 0.0 : widget.fadingEdgeEndFraction,
-      child: child as ScrollView,
-    );
-  }
 }
