@@ -2,8 +2,6 @@ library marquee;
 
 import 'dart:async';
 
-import 'package:fading_edge_scrollview/fading_edge_scrollview.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 /// A curve that represents the integral of another curve.
@@ -99,7 +97,7 @@ class Marquee extends StatefulWidget {
     this.scrollAxis = Axis.horizontal,
     this.crossAxisAlignment = CrossAxisAlignment.center,
     this.blankSpace = 0.0,
-    this.velocity = 50.0,
+    this.velocity = 100.0,
     this.startAfter = Duration.zero,
     this.pauseAfterRound = Duration.zero,
     this.showFadingOnlyWhenScrolling = true,
@@ -631,7 +629,7 @@ class _MarqueeState extends State<Marquee> with SingleTickerProviderStateMixin {
 
     await _decelerate();
 
-    _roundCounter++;
+    _roundCounter=1;
 
     if (!_running || !mounted) return;
 
@@ -727,7 +725,6 @@ class _MarqueeState extends State<Marquee> with SingleTickerProviderStateMixin {
       controller: _controller,
       scrollDirection: widget.scrollAxis,
       reverse: widget.textDirection == TextDirection.rtl,
-      physics: NeverScrollableScrollPhysics(),
       itemBuilder: (_, i) {
         final text = i.isEven
             ? Text(widget.text,
